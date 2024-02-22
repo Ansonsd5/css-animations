@@ -1,0 +1,33 @@
+.box{
+    height: 100px;
+    width: fit-content;
+    font-size: 32px;
+    color: blueviolet;
+    background-color: blanchedalmond;
+    border: 4px solid royalblue;
+    padding: 20px;
+    aspect-ratio: 24/12;
+    border-radius: 16px;
+    position: relative;
+}
+
+.anime{
+    /* animation-name: percentage;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+.anime{
+    animation: percentage 8s 2s infinite alternate;
+}
+
+@keyframes percentage {
+    0%{background-color: goldenrod; color: aqua; left: 0px; top:  0px;}
+    25%{background-color: aquamarine; color: goldenrod; left: 400px; top:  0px;}
+    50%{background-color: rgb(120, 82, 233); color: rgb(212, 86, 13);left: 400px; top:  400px;}
+    75%{background-color: rgb(114, 140, 131); color: rgb(167, 240, 83);left:  0px; top:  400px;}
+    100%{background-color: rgb(22, 119, 87); color: rgba(139, 185, 223, 0.584); left:  0px; top:  0px;}
+
+}
