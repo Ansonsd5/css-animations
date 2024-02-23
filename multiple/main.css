@@ -1,0 +1,84 @@
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(110, 0, 212);
+    color: rgb(7, 20, 17);
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 16px;
+}
+body{
+    margin: 20px;
+}
+
+.anime{
+    animation: move 10s infinite alternate,
+    shape 10s infinite ,
+    move-h 5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite
+}
+
+/* @keyframes move {
+    0%{
+        background-color: aqua;
+        top: 10px;
+        left: calc(100vw - 100%);
+    }
+   25%{
+        background-color: rgb(252, 8, 223);
+        top: 0px;
+        left: calc(100vw - 40%);
+    }
+    75%{
+        background-color: rgb(3, 211, 86);
+        top: 0px;
+        left: calc(10vw - 40%);
+    }
+    100%{
+        background-color: rgb(249, 98, 5);
+        top: 0px;
+        left: calc(60vw - 60%);
+    }
+} */
+
+@keyframes shape {
+    from{
+        transform: scale(0.2);
+    }
+    25%{
+        transform: scale(.5);
+    }
+    60%{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes move-h {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 300px;
+        top: 0px;
+    }
+    50%{
+        left: 100px;
+        top: 0px;
+    }
+    75%{
+        left: 500px;
+        top: 0px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}

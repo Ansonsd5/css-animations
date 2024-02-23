@@ -1,0 +1,86 @@
+.slide{
+    height: 80px;
+    width: 100%;
+    font-size: 32px;
+    color: white;
+    background-color: darkcyan;
+    position: relative;
+    text-align: center;
+    
+}
+
+.whatsapptab{
+    height: 40px;
+    width: 80px;
+    background-color: cadetblue;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide:hover{
+    animation: slideIn 5s  alternate ease-in-out;
+}
+article{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    width: fit-content;
+    margin: 40px auto;
+    
+   
+    
+}
+.tabs{
+    font-weight: 600;
+    font-size: 14px;
+    color: #555555;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.active{
+    color: rgb(75, 243, 173);
+    border-bottom: 2px solid currentColor;
+    animation: btn 3s cubic-bezier(0,1.5,1,1.5);
+}
+
+.active:hover{
+   /* background-color: azure; */
+   animation: btn 2s cubic-bezier(0,1.5,1,1.5);
+}
+
+
+
+
+.anime{
+    animation: slideIn 2s  alternate ease-in-out;
+} 
+.whatsapptab:hover{
+    animation: btn 0.5s cubic-bezier(0,0.5,1,1.5)
+}
+
+@keyframes btn {
+    from{
+        opacity: 0.5;
+        z-index: 11;
+        background-color: rgb(128, 140, 136);
+    }
+    to{
+        opacity: 1;
+        z-index: 11;
+    }
+}
+
+@keyframes slideIn {
+    from{
+        opacity: 0.2;
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+   
+    to {
+        opacity: 0.6;
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+}
