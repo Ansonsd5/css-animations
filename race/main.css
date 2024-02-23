@@ -1,0 +1,58 @@
+.box {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(235, 7, 155, 0.508);
+  border: 2px solid currentColor;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  padding: auto 10px;
+}
+
+.anime {
+  animation: move 10s alternate infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+.easeIn {
+  animation-timing-function: ease-in;
+}
+
+.easeOut {
+  animation-timing-function: ease-out;
+}
+
+.easeInOut {
+  animation-timing-function: ease-in-out;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.custom {
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes move {
+  from {
+    background: purple;
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    background: rgb(251, 100, 59);
+    left: calc(100vw - 200px);
+    top: 0px;
+  }
+}
